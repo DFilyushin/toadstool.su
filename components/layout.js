@@ -14,7 +14,7 @@ export default function Layout({children, home}) {
                 <meta property="og:title" content="Разработчик Филюшин Дмитрий" />
                 <meta property="og:type" content="website" />
                 <meta property="og:url" content="https://toadstool.su" />
-                <meta property="og:image" content="/images/lib_icon_328x328.png" />
+                <meta property="og:image" content="/images/me_icon_328x328.png" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:description" content="Разработчик настольных и веб-приложений Дмитрий Филюшин. Toadstool.su" />
             </Head>

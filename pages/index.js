@@ -18,18 +18,19 @@ export default function Home({allPostsData}) {
 
                     <div className="section-title">
                         <h2>Общее</h2>
-                        <p>Более 15 лет проектирования и разработки приложений. Разработка технических требований проектов.
-                            Разработка настольных корпоративных приложений.</p>
+                        <p>Более 15 лет проектирования и разработки приложений.</p><p> Разработка технических требований
+                        проектов.
+                        Разработка настольных корпоративных приложений.</p>
                     </div>
 
                     <div className="row">
                         <div className="col-lg-4">
-                            <img src="images/me.jpg" className="img-fluid" alt=""/>
+                            <img src="images/me.jpg" className="img-fluid rounded" alt="Фото разработчика"/>
                         </div>
                         <div className="col-lg-8 pt-4 pt-lg-0 content">
                             <h3>Fullstack разработчик</h3>
                             <p className="font-italic">
-                                Веб-разработка, преимущественно бэкэнд.
+                                Веб-разработка, преимущественно бэкэнд. Настольные приложения.
                             </p>
                             <div className="row">
                                 <div className="col-lg-6">
@@ -43,14 +44,22 @@ export default function Home({allPostsData}) {
                                                 <a>{"toadstool.su"}</a>
                                             </Link>
                                         </li>
-                                        <li><i className="icofont-rounded-right"></i> <strong>Тел.:</strong> +7 913 934 2091</li>
-                                        <li><i className="icofont-rounded-right"></i> <strong>Город:</strong> Новосибирск, РФ</li>
+                                        <li><i className="icofont-rounded-right"></i> <strong>Тел.:</strong> <a
+                                            href="callto://+79139342091">+7 913 934 2091</a></li>
+                                        <li><i className="icofont-rounded-right"></i> <strong>Skype:</strong> <a
+                                            href="skype:dfilushin?call">dfilushin</a></li>
+                                        <li><i className="icofont-rounded-right"></i>
+                                            <strong>Город:</strong> Новосибирск, РФ
+                                        </li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">
                                     <ul>
-                                        <li><i className="icofont-rounded-right"></i> <strong>Возраст:</strong> {getAge()}</li>
-                                        <li><i className="icofont-rounded-right"></i> <strong>Уровень:</strong></li>
+                                        <li><i className="icofont-rounded-right"></i>
+                                            <strong>Возраст:</strong> {getAge()}</li>
+                                        <li><i className="icofont-rounded-right"></i>
+                                            <strong>Уровень:</strong> Специалист
+                                        </li>
                                         <li><i className="icofont-rounded-right"></i>
                                             <strong>Email:</strong> dmitriy.filyushin@yandex.ru
                                         </li>
@@ -62,11 +71,8 @@ export default function Home({allPostsData}) {
                                 </div>
                             </div>
                             <p>
-                                Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt
-                                adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-                                Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus
-                                itaque neque. Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis
-                                culpa magni laudantium dolores.
+                                Интересна работа в качестве бэкэнд разработчика на Python в небольшой команде стартапа.
+                                Интересен в изучении и использовании Go, Kubernates, C#.
                             </p>
                         </div>
                     </div>
@@ -87,20 +93,27 @@ export default function Home({allPostsData}) {
                     <div className="row skills-content">
 
                         <div className="col-lg-6 text-center">
-                            <img src="images/delphi.png" className={"inline"} title="Embarcadero Delphi"/>
-                            <img src="images/react.png" className={"inline"} title="React"/>
-                            <img src="images/python.png" className={"inline"} title="Python"/>
-                            <img src="images/django.png" className={"inline"} title="Django framework"/>
-                            <img src="images/flask.png" className={"inline"} title="Flask framework"/>
-                            <img src="images/ts.png" className={"inline"} title="TypeScript"/>
+                            <img src="images/delphi.png" className={"inline"} title="Embarcadero Delphi"
+                                 alt="Embarcadero Delphi"/>
+                            <img src="images/react.png" className={"inline"} title="React" alt="React"/>
+                            <img src="images/python.png" className={"inline"} title="Python" alt="Python"/>
+                            <img src="images/django.png" className={"inline"} title="Django framework"
+                                 alt="Django framework"/>
+                            <img src="images/flask.png" className={"inline"} title="Flask framework"
+                                 alt="Flask framework"/>
+                            <img src="images/ts.png" className={"inline"} title="TypeScript" alt="TypeScript"/>
                         </div>
 
                         <div className="col-lg-6 text-center">
-                            <img src="images/firebird.png" className={"inline text-center"} title="Firebird database"/>
-                            <img src="images/mongodb.png" className={"inline text-center"} title="MongoDb database"/>
-                            <img src="images/docker.png" className={"inline text-center"} title="Docker"/>
-                            <img src="images/postgresql.png" className={"inline text-center"} title="Postgresql"/>
-                            <img src="images/ubuntu.png" className={"inline text-center"} title="Ubuntu Linux"/>
+                            <img src="images/firebird.png" className={"inline text-center"} title="Firebird database"
+                                 alt="Firebird database"/>
+                            <img src="images/mongodb.png" className={"inline text-center"} title="MongoDb database"
+                                 alt="MongoDb database"/>
+                            <img src="images/docker.png" className={"inline text-center"} title="Docker" alt="Docker"/>
+                            <img src="images/postgresql.png" className={"inline text-center"} title="Postgresql"
+                                 alt="Postgresql"/>
+                            <img src="images/ubuntu.png" className={"inline text-center"} title="Ubuntu Linux"
+                                 alt="Ubuntu Linux"/>
                         </div>
 
                     </div>
@@ -113,9 +126,11 @@ export default function Home({allPostsData}) {
 
                     <div className="section-title">
                         <h2>Резюме</h2>
-                        <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
-                            Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit
-                            alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+                        <p>Самостоятелен в принятии решений. Веду проект от постановки задачи до внедрения и
+                            дальнейшего сопровождения. Пользователей люблю и уважаю потому что делаю приложения для
+                            людей.
+                            Считаю себя коммуникабельным, открытым, упорным в поиске решения задачи, но не
+                            настолько, чтобы имея очевидное решение искать элегантный алгоритм в одну строчку.</p>
                     </div>
 
                     <div className="row">
@@ -123,11 +138,13 @@ export default function Home({allPostsData}) {
                             <h3 className="resume-title">Общие сведения</h3>
                             <div className="resume-item pb-0">
                                 <h4>Дмитрий Филюшин</h4>
-                                <p><em>Самостоятелен в принятии решений. Веду проект от постановки задачи до запуска и
-                                    дальнейшего сопровождения. Пользователей люблю и уважаю потому что делаю приложения
-                                    для людей.
-                                    Считаю себя коммуникабельным, открытым, упорным в поиске решения задачи, но не
-                                    настолько, чтобы имея очевидное решение искать элегантный алгоритм в одну строчку.
+                                <p><em>Разрабатываю приложения для Windows в среде Delphi. Python.
+                                    Использую СУБД Firebird, postgresql, mongodb, mysql. Разрабатываю прикладное ПО для
+                                    анализа данных Oracle, MS SQL, Postgresql.
+                                    В повседневной работе использую системы управления версиями git (SmartGit, CLI),
+                                    jira.
+                                    Сопровождаю сервера на Linux, FreeBSD (iptables, systemd, zabbix).
+                                    Деплой на сервера VPS Linux с использованием docker.
                                 </em></p>
                                 <ul>
                                     <li>Россия, Новосибирск</li>
@@ -154,7 +171,8 @@ export default function Home({allPostsData}) {
                                     <li>Разработка настольных приложений</li>
                                     <li>Сопровождение собственных приложений</li>
                                     <li>Учёт коммунальных платежей Рубин</li>
-                                    <li>Медицинская информационная система КардиоКарта (настольное и веб-приложение)</li>
+                                    <li>Медицинская информационная система КардиоКарта (настольное и веб-приложение)
+                                    </li>
                                     <li>Система электронного документооборота Докумед</li>
                                     <li>Электронные расчётные листки</li>
                                     <li>Централизованная бактериологическая лаборатория Bacillus</li>
@@ -166,7 +184,9 @@ export default function Home({allPostsData}) {
                                 <p><em>ГБУ НСО Центр Информационных Технологий Новосибирской Области, НСК, РФ </em></p>
                                 <ul>
                                     <li>Эксплуатация резервного центра обработки данных</li>
-                                    <li>Техническая поддержка систем мониторинга, диспетчеризации и контроля состояния ЦОДа</li>
+                                    <li>Техническая поддержка систем мониторинга, диспетчеризации и контроля состояния
+                                        ЦОДа
+                                    </li>
                                 </ul>
                             </div>
                             <div className="resume-item">
@@ -213,17 +233,22 @@ export default function Home({allPostsData}) {
                         <p>Наиболее интересные и эмоциональные проекты</p>
                     </div>
 
-                    <div className="row skills-content">
-                        <ul className={utilStyles.list}>
-                            {allPostsData.map(({id, date, title}) => (
-                                <li key={id}>
-                                    <i className="icofont-rounded-right"></i>
-                                    <Link href={`/projects/${id}`}>
-                                        <a>{title}</a>
-                                    </Link>
-                                </li>
-                            ))}
-                        </ul>
+                    <div className="row row-cols-1 row-cols-md-3">
+                        {allPostsData.map(({id, date, title, image}) => (
+                            <div className="col mb-4" key={id}>
+                                <div className="card">
+                                    <img src={`images/${image}`} />
+                                    <div className="card-body">
+                                        <h5 className="card-title"></h5>
+                                        <Link href={`/projects/${id}`}>
+                                            <a>{title}</a>
+                                        </Link>
+
+                                    </div>
+                                </div>
+                            </div>
+                        ))}
+
                     </div>
                 </div>
             </section>
