@@ -3,6 +3,7 @@ import Layout, {siteTitle} from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
 import {getSortedPostsData} from '../lib/posts'
 import Link from 'next/link'
+import {getAge} from '../components/date'
 
 
 export default function Home({allPostsData}) {
@@ -16,7 +17,7 @@ export default function Home({allPostsData}) {
                 <div className="container" data-aos="fade-up">
 
                     <div className="section-title">
-                        <h2>About</h2>
+                        <h2>Общее</h2>
                         <p>Более 15 лет проектирования и разработки приложений. Разработка технических требований проектов.
                             Разработка настольных корпоративных приложений.</p>
                     </div>
@@ -38,18 +39,17 @@ export default function Home({allPostsData}) {
                                             1983
                                         </li>
                                         <li><i className="icofont-rounded-right"></i>
-                                            <strong>Сайт:</strong> toadstool.su
+                                            <strong>Сайт:</strong> <Link href={`https://toadstool.su/`}>
+                                                <a>{"toadstool.su"}</a>
+                                            </Link>
                                         </li>
-                                        <li><i className="icofont-rounded-right"></i> <strong>Тел.:</strong> +7 913 934
-                                            2091
-                                        </li>
-                                        <li><i className="icofont-rounded-right"></i> <strong>Город:</strong> НСК, РФ
-                                        </li>
+                                        <li><i className="icofont-rounded-right"></i> <strong>Тел.:</strong> +7 913 934 2091</li>
+                                        <li><i className="icofont-rounded-right"></i> <strong>Город:</strong> Новосибирск, РФ</li>
                                     </ul>
                                 </div>
                                 <div className="col-lg-6">
                                     <ul>
-                                        <li><i className="icofont-rounded-right"></i> <strong>Возраст:</strong> 30</li>
+                                        <li><i className="icofont-rounded-right"></i> <strong>Возраст:</strong> {getAge()}</li>
                                         <li><i className="icofont-rounded-right"></i> <strong>Уровень:</strong></li>
                                         <li><i className="icofont-rounded-right"></i>
                                             <strong>Email:</strong> dmitriy.filyushin@yandex.ru
@@ -153,6 +153,11 @@ export default function Home({allPostsData}) {
                                 <ul>
                                     <li>Разработка настольных приложений</li>
                                     <li>Сопровождение собственных приложений</li>
+                                    <li>Учёт коммунальных платежей Рубин</li>
+                                    <li>Медицинская информационная система КардиоКарта (настольное и веб-приложение)</li>
+                                    <li>Система электронного документооборота Докумед</li>
+                                    <li>Электронные расчётные листки</li>
+                                    <li>Централизованная бактериологическая лаборатория Bacillus</li>
                                 </ul>
                             </div>
                             <div className="resume-item">
