@@ -13,10 +13,10 @@ export default function Layout({children, home}) {
                 <link rel="icon" href="/favicon.png"/>
                 <meta property="og:title" content="Разработчик Филюшин Дмитрий" />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="%PUBLIC_URL%" />
-                <meta property="og:image" content="%PUBLIC_URL%/images/lib_icon_328x328.png" />
+                <meta property="og:url" content="https://toadstool.su" />
+                <meta property="og:image" content="/images/lib_icon_328x328.png" />
                 <meta property="og:locale" content="ru_RU" />
-                <meta property="og:description" content="%REACT_APP_LIB_DESCRIPTION%" />
+                <meta property="og:description" content="Разработчик настольных и веб-приложений Дмитрий Филюшин. Toadstool.su" />
             </Head>
             <header className={styles.header}>
                 {home ? (
