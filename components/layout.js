@@ -22,7 +22,7 @@ export default function Layout({children, home}) {
 
             </Head>
 
-            <YMInitializer accounts={[parseInt(process.env.YANDEX_METRIC_CODE)]} />
+            <YMInitializer accounts={[parseInt(process.env.NEXT_PUBLIC_YANDEX_METRIC)]} />
 
             <header className={styles.header}>
                 {home ? (
