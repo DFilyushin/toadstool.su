@@ -2,6 +2,8 @@ import Head from 'next/head'
 import styles from './layout.module.css'
 import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
+import { YMInitializer } from 'react-yandex-metrika';
+
 
 const name = '[DFilyushin]'
 export const siteTitle = 'Developer Filyushin Dmitriy'
@@ -17,7 +19,11 @@ export default function Layout({children, home}) {
                 <meta property="og:image" content="/images/me_icon_328x328.png" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:description" content="Разработчик настольных и веб-приложений Дмитрий Филюшин. Toadstool.su" />
+
             </Head>
+
+            <YMInitializer accounts={[parseInt(process.env.YANDEX_METRIC_CODE)]} />
+
             <header className={styles.header}>
                 {home ? (
                     <>
