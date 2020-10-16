@@ -19,7 +19,7 @@ export default function Layout({children, home}) {
                 <meta property="og:image" content="/images/me_icon_328x328.png" />
                 <meta property="og:locale" content="ru_RU" />
                 <meta property="og:description" content="Разработчик настольных и веб-приложений Дмитрий Филюшин. Toadstool.su" />
-
+                <meta name="description" content="Сайт разработчика настольных и веб-приложений Дмитрия Филюшина" />
             </Head>
 
             <YMInitializer accounts={[parseInt(process.env.NEXT_PUBLIC_YANDEX_METRIC)]} />
