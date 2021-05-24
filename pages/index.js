@@ -64,24 +64,24 @@ export default function Home({allPostsData}) {
                                             <strong>Email:</strong> dmitriy.filyushin@yandex.ru
                                         </li>
                                         <li><i className="icofont-rounded-right"></i>
-                                            <strong>Проекты:</strong> Проектная работа, удалённая работа, фуллтайм в
+                                            <strong>Проекты:</strong> Проектная, удалённая работа, фуллтайм в
                                             интересной команде
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <p>
-                                Интересна работа в качестве бэкэнд разработчика на Python в небольшой команде стартапа.
-                                Интересен в изучении и использовании Go, Kubernates, C#.
+                                Интересна работа в качестве бэкэнд разработчика на Python, Go в команде стартапа или продуктовой компании.
+                                Интересен в изучении и использовании Go, Kubernetes, C#.
                             </p>
                             <p>
                                 <Link href={`/CV.Filyushin_Dmitriy.RUS.pdf`}>
                                     <a target='_blank'><button type="button" className="btn btn-primary">
                                         <svg width="1em" height="1em" viewBox="0 0 16 16" className="bi bi-download"
                                              fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                            <path fill-rule="evenodd"
+                                            <path fillRule="evenodd"
                                                   d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                            <path fill-rule="evenodd"
+                                            <path fillRule="evenodd"
                                                   d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
                                         </svg>
                                         &nbsp; Открыть резюме в PDF
@@ -107,15 +107,14 @@ export default function Home({allPostsData}) {
                     <div className="row skills-content">
 
                         <div className="col-lg-6 text-center">
-                            <img src="images/delphi.png" className={"inline"} title="Embarcadero Delphi"
-                                 alt="Embarcadero Delphi"/>
-                            <img src="images/react.png" className={"inline"} title="React" alt="React"/>
+                            <img src="images/delphi.png" className={"inline"} title="Embarcadero Delphi" alt="Embarcadero Delphi"/>
                             <img src="images/python.png" className={"inline"} title="Python" alt="Python"/>
-                            <img src="images/django.png" className={"inline"} title="Django framework"
-                                 alt="Django framework"/>
-                            <img src="images/flask.png" className={"inline"} title="Flask framework"
-                                 alt="Flask framework"/>
+                            <img src="images/aiohttp.png" className={"inline"} title="AioHttp" alt="Python async (AIOHttp, Asyncio)"/>
+                            <img src="images/fastapi.png" className={"inline"} title="FastAPI" alt="FastAPI"/>
+                            <img src="images/django.png" className={"inline"} title="Django framework" alt="Django framework"/>
+                            <img src="images/flask.png" className={"inline"} title="Flask framework" alt="Flask framework"/>
                             <img src="images/ts.png" className={"inline"} title="TypeScript" alt="TypeScript"/>
+                            <img src="images/react.png" className={"inline"} title="React" alt="React"/>
                         </div>
 
                         <div className="col-lg-6 text-center">
@@ -152,11 +151,10 @@ export default function Home({allPostsData}) {
                             <h3 className="resume-title">Общие сведения</h3>
                             <div className="resume-item pb-0">
                                 <h4>Дмитрий Филюшин</h4>
-                                <p><em>Разрабатываю приложения для Windows в среде Delphi. Python.
+                                <p><em>Разрабатываю микросервисы на Python, Go, приложения для Windows в среде Delphi.
                                     Использую СУБД Firebird, postgresql, mongodb, mysql. Разрабатываю прикладное ПО для
                                     анализа данных Oracle, MS SQL, Postgresql.
-                                    В повседневной работе использую системы управления версиями git (SmartGit, CLI),
-                                    jira.
+                                    В повседневной работе использую системы управления версиями git, jira.
                                     Сопровождаю сервера на Linux, FreeBSD (iptables, systemd, zabbix).
                                     Деплой на сервера VPS Linux с использованием docker.
                                 </em></p>
@@ -178,15 +176,36 @@ export default function Home({allPostsData}) {
                         <div className="col-lg-6">
                             <h3 className="resume-title">Опыт работы</h3>
                             <div className="resume-item">
+                                <h4>Senior Python разработчик</h4>
+                                <h5>2020 - настоящее время</h5>
+                                <p><em>FintechIQ, НСК, РФ</em></p>
+                                <ul>
+                                    <li>Разработка микросервисов на Python</li>
+                                    <li>Интеграция скорингов сторонних систем (JsonApi, JsonRpc, XML)</li>
+                                    <li>Взаимодействие микросервисов посредством асинхронных фреймворков, шины сообщений AMQP</li>
+                                    <li>Непрерывная интеграция и доставка CI/CD в проектах</li>
+                                    <li>Gitlab, Jira, Confluence, Docker, Kubernetes</li>
+                                </ul>
+                            </div>
+                            <div className="resume-item">
+                                <h4>Python разработчик</h4>
+                                <h5>2020</h5>
+                                <p><em>Coding Team, Санкт-Петербург, РФ</em></p>
+                                <ul>
+                                    <li>Разработка асинхронных веб-сервисов (asyncio, aiohttp) с использованием очередей RabbitMQ</li>
+                                    <li>Взаимодействие со сторонним API</li>
+                                    <li>Использование MongoDB, Redis, Clickhouse</li>
+                                </ul>
+                            </div>
+                            <div className="resume-item">
                                 <h4>Эксперт</h4>
-                                <h5>2004 - Настоящее время</h5>
+                                <h5>2004 - 2020</h5>
                                 <p><em>Частная практика, фриланс</em></p>
                                 <ul>
                                     <li>Разработка настольных приложений</li>
                                     <li>Сопровождение собственных приложений</li>
                                     <li>Учёт коммунальных платежей Рубин</li>
-                                    <li>Медицинская информационная система КардиоКарта (настольное и веб-приложение)
-                                    </li>
+                                    <li>Медицинская информационная система КардиоКарта (настольное и веб-приложение)</li>
                                     <li>Система электронного документооборота Докумед</li>
                                     <li>Электронные расчётные листки</li>
                                     <li>Централизованная бактериологическая лаборатория Bacillus</li>
@@ -194,13 +213,11 @@ export default function Home({allPostsData}) {
                             </div>
                             <div className="resume-item">
                                 <h4>Эксперт</h4>
-                                <h5>2019 - Настоящее время</h5>
+                                <h5>2019 - 2020</h5>
                                 <p><em>ГБУ НСО Центр Информационных Технологий Новосибирской Области, НСК, РФ </em></p>
                                 <ul>
                                     <li>Эксплуатация резервного центра обработки данных</li>
-                                    <li>Техническая поддержка систем мониторинга, диспетчеризации и контроля состояния
-                                        ЦОДа
-                                    </li>
+                                    <li>Техническая поддержка систем мониторинга, диспетчеризации и контроля состояния ЦОДа</li>
                                 </ul>
                             </div>
                             <div className="resume-item">
